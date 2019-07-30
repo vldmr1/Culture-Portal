@@ -31,6 +31,12 @@ const Header = ({ siteTitle }) => (
               Home
         </Link>
       </h2>
+      <h2>
+        <Link
+            to="/developers" >
+              Our Team
+        </Link>
+      </h2>
     </div>
   </header>
 )

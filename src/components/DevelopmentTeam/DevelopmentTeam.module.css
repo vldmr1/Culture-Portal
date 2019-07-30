@@ -1,0 +1,13 @@
+.team {
+    padding: 40px;
+    background: pink;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-auto-rows: 400px;
+    grid-gap: 20px;
+}
+
+.teamMember {
+    height: 400px;
+    background: white;
+}
