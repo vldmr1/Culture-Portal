@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Button } from 'react-bootstrap';
+import './bootstrap.min.css';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -19,18 +21,27 @@ const Header = ({ siteTitle }) => (
       <h1>
         {siteTitle}
       </h1>
-      <h2>
-        <Link
-            to="/poets" >
-              Poets
-        </Link>
-      </h2>
-      <h2>
-        <Link
-            to="/" >
-              Home
-        </Link>
-      </h2>
+      <Link
+        to="/poets" 
+      >
+        <Button variant="warning">Poets</Button>       
+      </Link>
+
+      <Link
+        to="/"
+        style={{
+          margin: '1rem',
+        }}
+      >
+        <Button variant="warning">Home</Button>       
+      </Link>
+
+      <Link
+        to="/" 
+      >
+        <Button variant="warning">About us</Button>       
+      </Link>
+ 
     </div>
   </header>
 )
