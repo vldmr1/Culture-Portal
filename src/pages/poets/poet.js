@@ -3,12 +3,11 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import AboutAuthor from "../../components/AboutAuthor/AboutAuthor"
 
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <AboutAuthor/>
+    <h1>Hi, this is poet card</h1>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 );

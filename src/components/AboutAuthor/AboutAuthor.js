@@ -1,23 +1,27 @@
 import React from 'react';
 
+import { Container, Row, Col } from 'react-bootstrap';
 import styles from "./AboutAuthor.module.css";
-import Yanka_Kupala from "../../assets/images/img/Yanka_Kupala.jpg";
 
-const AboutAuthor = () => (
-    <div className = {styles.poetContent}>
+const AboutAuthor = ({ picture, name, date, description }) => (
+    <Container>
+      <Row>
+        <Col className = {styles.poetContent}>
       <div className = {styles.poetImage}>
-        <img src={Yanka_Kupala} alt="Kupala"/>
+        <img src={picture} alt="Author's picture"/>
       </div>
       <div className = {styles.poetTitle}>
-        Янка Купала
+        {name}
       </div>
       <div>
-        (25 июня 1882 – 28 июня 1942)
+        {date}
       </div>
-      <div className = {styles.description}>
-        Белорусский поэт и переводчик, драматург, публицист. Классик белорусской литературы. Народный поэт БССР (1925). Академик АН БССР (1928) и АН УССР (1929). Лауреат Сталинской премии первой степени (1941).
+      <div className = {styles.poetDescription}>
+        {description}
       </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 
 export default AboutAuthor;
