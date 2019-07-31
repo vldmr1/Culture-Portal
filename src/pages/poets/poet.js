@@ -7,26 +7,26 @@ import Video from "../../components/Video/Video"
 import TimeLine from "../../components/Timeline/Timeline"
 
 const info = [
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1956", text: "Create blog"},
-  {date: "1957", text: "Close blog"}
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1956", desc: "Create timeline"},
+  {date: "1957", desc: "Close timeline"}
 ]
 
 const SecondPage = () => (
