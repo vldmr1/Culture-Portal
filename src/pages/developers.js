@@ -44,8 +44,9 @@ const SecondPage = () => (
         flexWrap: `wrap`,
         justifyContent: `center`,
       }}>
-      {team.map( el => 
+      {team.map( (el, index) => 
         <DevTeam 
+          key={index}
           name={el.name} 
           image={el.image}
           github={el.github}
