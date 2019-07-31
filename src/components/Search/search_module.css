@@ -1,0 +1,25 @@
+.search .search__input{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+
+.search__name-list{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 20px auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.search__name-list li{
+    padding: 10px;
+}
+.search__name-list li:nth-child(2n-1){
+    background-color: #f1f1f1;
+}
+
+.search__name-list li:nth-child(2n){
+    background-color: #dadada;
+}

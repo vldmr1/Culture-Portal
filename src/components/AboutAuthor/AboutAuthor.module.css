@@ -1,0 +1,15 @@
+.poetContent {
+    text-align: center;
+}
+
+.poetImage {
+    margin: 80px auto 0;
+}
+
+.poetTitle {
+    font-size: 30px;
+}
+
+.poetDescription {
+    font-size: 20px;
+}
