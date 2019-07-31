@@ -3,10 +3,10 @@ import React from "react"
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
 function getRandomColor() {
-  var letters = '01234567';
+  var letters = '0123456789ABC';
   var color = '#';
   for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 8)];
+    color += letters[Math.floor(Math.random() * 13)];
   }
   return color;
 }
