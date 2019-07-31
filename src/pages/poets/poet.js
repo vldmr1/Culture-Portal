@@ -8,6 +8,24 @@ import TimeLine from "../../components/Timeline/Timeline"
 
 const info = [
   {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
+  {date: "1956", text: "Create blog"},
   {date: "1957", text: "Close blog"}
 ]
 
