@@ -17,7 +17,6 @@ const IndexPage = () => (
       recently with desktop publishing software like Aldus PageMaker including versions
       of Lorem Ipsum.</p>
     <h2>Author of the day</h2>
-    <h2>About the team</h2>
   </Layout>
 )
 
