@@ -23,6 +23,7 @@ const TimeLine = (props) => (
             dateInnerStyle={{ background: generatedColor, color: "#fff" }}
             bodyContainerStyle={{ background: textStyle }}
             style={{ color: generatedColor }}>
+          <h3>{el.title}</h3>
           <p>{el.desc}</p>
           </TimelineItem>
         )
