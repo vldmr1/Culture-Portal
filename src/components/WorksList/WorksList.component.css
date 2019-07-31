@@ -1,0 +1,11 @@
+.worksList table thead th{
+    text-align: center;
+    border: none;
+}
+.worksList table tbody tr td{
+    padding: 10px; 
+}
+.worksList table tbody tr td:nth-child(2){
+    width: 100px;
+    text-align: center;
+}
