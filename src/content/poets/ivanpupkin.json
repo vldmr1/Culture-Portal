@@ -1,0 +1,83 @@
+{
+  "id": "ivanPupkin",
+  "en": {
+    "name": "Ivan Pupkin",
+    "location": "Minsk",
+    "yearsOfLife": "1940 - 1959",
+    "bio": " I was born one morning when the sun didn't shine",
+    "timeline": [
+      {
+        "time": "1950 - 1955",
+        "description": "Bark-Bark"
+      }
+    ],
+    "poems": [
+      {
+        "poemYear": "1954",
+        "poem": "Bark"
+      },
+      {
+        "poemYear": "1955",
+        "poem": "Bark-Bark"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  "ru": {
+    "name": "Иван Пупкин",
+    "yearsOfLife": "1940 - 1959",
+    "location": "Минск",
+    "bio": "Родился рано утром, солнце не светило",
+    "timeline": [
+      {
+        "time": "1950 - 1955",
+        "description": "Гав-Гав"
+      }
+    ],
+    "poems": [
+      {
+        "poemYear": "1954",
+        "poem": "Гав"
+      },
+      {
+        "poemYear": "1955",
+        "poem": "Гав-Гав"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  "be": {
+    "name": "Иван Пупкин",
+    "yearsOfLife": "1940 - 1959",
+    "location": "Мiнск",
+    "bio": "Нарадзиуся раницей, сонейка не выглядала",
+    "timeline": [
+      {
+        "time": "1950 - 1955",
+        "description": "Гау-Гау"
+      }
+    ],
+    "poems": [
+      {
+        "poemYear": "1954",
+        "poem": "Гау"
+      },
+      {
+        "poemYear": "1955",
+        "poem": "Гау-Гау"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  "galleryImages": [
+    {
+      "image": "/assets/images/uploads/p0695y83.jpg"
+    },
+    {
+      "image": "/assets/images/uploads/5034f3-20180309-rick-astley.jpg"
+    },
+    {
+      "image": "/assets/images/uploads/rickastley.jpg"
+    }
+  ]
+}
