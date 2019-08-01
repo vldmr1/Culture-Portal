@@ -1,0 +1,91 @@
+{
+  "id": "Ryhor_Baradulin",
+  "en": {
+    "name": "Ryhor Baradulin",
+    "yearsOfLife": "24 February 1935 – 2 March 2014",
+    "location": "location",
+    "desc": "A Belarusian poet, essayist and translator",
+    "timeline": [
+      {
+        "time": "1935-1937",
+        "description": "Ryhor Baradulin was born in 1935 in Verasowka (Belarusian: Верасоўка, Werasoŭka), Ushachy Raion, to Ivan and Kulina Baradulin"
+      },
+      {
+        "time": "1945-1959",
+        "description": "He graduated from a school in Ushachy in 1954, and continued his education at the Belarusian State University in Minsk, from which he graduated in 1959. He began to be published in 1953, the first poems were published in the newspaper \"Chyrvonaya Zmena\". The first collection of poetry \"Month over the steppe\" (Belarusian: «Маладзік над стэпам») was published in 1959."
+      }
+    ],
+    "poems": [
+      {
+        "group": "Зборнікі паэзіі",
+        "works": [
+          {
+            "name": "«Маладзік над стэпам»",
+            "date": "1959"
+          },
+          {
+            "name": "«Рунець, красаваць, налівацца!»",
+            "date": "1961"
+          }
+        ]
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=kuaJLU71W10",
+    "mapId": "id"
+  },
+  "ru": {
+    "name": "123",
+    "yearsOfLife": "123",
+    "location": "231",
+    "desc": "12323",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "12312"
+      }
+    ],
+    "poems": [
+      {
+        "group": "123123",
+        "works": [
+          {
+            "name": "222",
+            "date": "333"
+          }
+        ]
+      }
+    ],
+    "video": "1222",
+    "mapId": "33"
+  },
+  "be": {
+    "name": "12312",
+    "yearsOfLife": "12312",
+    "location": "12312",
+    "desc": "12312",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "21312312"
+      }
+    ],
+    "poems": [
+      {
+        "group": "1231231",
+        "works": [
+          {
+            "name": "123123",
+            "date": "123123"
+          }
+        ]
+      }
+    ],
+    "video": "12312",
+    "mapId": "1231231"
+  },
+  "galleryImages": [
+    {
+      "image": "/assets/images/uploads/yanka_kupala.jpg"
+    }
+  ]
+}
