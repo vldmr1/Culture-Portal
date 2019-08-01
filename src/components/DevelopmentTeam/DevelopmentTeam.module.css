@@ -1,0 +1,40 @@
+.team {
+    background: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamMember {
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    background: white;
+}
+
+.memberAvatar {
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+}
+
+.memberAvatar img {
+    margin-bottom: 0;
+}
+
+.teamMember h3 {
+    text-align: left;
+    height: 80px;
+    margin: 10px 0 0 20px;
+}
+
+span {
+    display: flex;
+    margin-left: 20px;
+}
+
+span img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}

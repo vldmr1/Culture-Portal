@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
           <Link style={{paddingRight: '20px'}} to="/poets">
             <Button variant="info">Poets</Button>       
           </Link>
-          <Link style={{paddingRight: '20px'}} to="/poets">
+          <Link style={{paddingRight: '20px'}} to="/developers">
             <Button variant="info">About us</Button>       
           </Link>
         </Col>
