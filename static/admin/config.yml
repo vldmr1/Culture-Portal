@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: cms
 
 media_folder: src/assets/images/uploads
 public_folder: assets/images/uploads
@@ -21,8 +21,8 @@ collections:
        widget: "object"
        fields:
         - {label: "Name", name: "name", widget: "string"}
-        - {label: "Location", name: "location", widget: "string"}
         - {label: "Years of life", name: "yearsOfLife", widget: "string"}
+        - {label: "Location", name: "location", widget: "string"}
         - {label: "Bio", name: "bio", widget: "markdown"}
         - label: "Timeline"
           name: "timeline"
