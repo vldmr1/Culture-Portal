@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: https://github.com/vldmr1/Culture-Portal
+  repo: vldmr1/Culture-Portal
   branch: cms
 
 media_folder: src/assets/images/uploads
