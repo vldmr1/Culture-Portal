@@ -1,69 +1,91 @@
 {
   "id": "Yanka_Kupala",
   "en": {
-    "name": "Yanka Kupala",
-    "yearsOfLife": "July 7 1882 – June 28, 1942",
-    "location": "loc",
-    "bio": "А Belarusian poet and writer. Kupala is considered one of the greatest Belarusian-language writers of the 20th century.",
+    "name": "Ryhor Baradulin",
+    "yearsOfLife": "24 February 1935 – 2 March 2014",
+    "location": "location",
+    "desc": "A Belarusian poet, essayist and translator",
     "timeline": [
       {
-        "time": "1882",
-        "description": "Kupala was born on July 7, 1882 in Viazynka, a folwark settlement near Maladzyechna. His family was noble, although both of Kupala's parents were employed as tenant farmers at the folwark."
+        "time": "1935-1937",
+        "description": "Ryhor Baradulin was born in 1935 in Verasowka (Belarusian: Верасоўка, Werasoŭka), Ushachy Raion, to Ivan and Kulina Baradulin"
       },
       {
-        "time": "1898",
-        "description": "Kupala received a traditional Belarusian education, completing his studies in 1898."
+        "time": "1945-1959",
+        "description": "He graduated from a school in Ushachy in 1954, and continued his education at the Belarusian State University in Minsk, from which he graduated in 1959. He began to be published in 1953, the first poems were published in the newspaper \"Chyrvonaya Zmena\". The first collection of poetry \"Month over the steppe\" (Belarusian: «Маладзік над стэпам») was published in 1959."
       }
     ],
     "poems": [
       {
-        "poemYear": "1908",
-        "poem": "«Жалейка»"
-      },
-      {
-        "poemYear": "1910",
-        "poem": "«Гусляр»"
+        "group": "Зборнікі паэзіі",
+        "works": [
+          {
+            "name": "«Маладзік над стэпам»",
+            "date": "1959"
+          },
+          {
+            "name": "«Рунець, красаваць, налівацца!»",
+            "date": "1961"
+          },
+          {
+            "name": "Geras",
+            "date": "196122"
+          }
+        ]
       }
     ],
-    "video": "https://www.youtube.com/watch?v=9FZehV2qJTk"
+    "video": "https://www.youtube.com/watch?v=kuaJLU71W10",
+    "mapId": "id"
   },
   "ru": {
-    "name": "ru",
+    "name": "123",
     "yearsOfLife": "123",
-    "location": "loc",
-    "bio": "rdfgdfgdf",
+    "location": "231",
+    "desc": "12323",
     "timeline": [
       {
         "time": "1980",
-        "description": "sdfsdf"
+        "description": "12312"
       }
     ],
     "poems": [
       {
-        "poemYear": "1980",
-        "poem": "sdfsd"
+        "group": "123123",
+        "works": [
+          {
+            "name": "222",
+            "date": "333"
+          }
+        ]
       }
     ],
-    "video": "https://www.youtube.com/watch?v=9FZehV2qJTk"
+    "video": "1222",
+    "mapId": "33"
   },
   "be": {
-    "name": "by",
-    "yearsOfLife": "123",
-    "location": "loc",
-    "bio": "dfgdfgdfgd",
+    "name": "12312",
+    "yearsOfLife": "12312",
+    "location": "12312",
+    "desc": "12312",
     "timeline": [
       {
         "time": "1980",
-        "description": "sdfs"
+        "description": "21312312"
       }
     ],
     "poems": [
       {
-        "poemYear": "1980",
-        "poem": "sdf"
+        "group": "1231231",
+        "works": [
+          {
+            "name": "123123",
+            "date": "123123"
+          }
+        ]
       }
     ],
-    "video": "https://www.youtube.com/watch?v=9FZehV2qJTk"
+    "video": "12312",
+    "mapId": "1231231"
   },
   "galleryImages": [
     {
