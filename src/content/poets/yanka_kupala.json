@@ -1,0 +1,73 @@
+{
+  "id": "Yanka_Kupala",
+  "en": {
+    "name": "Yanka Kupala",
+    "yearsOfLife": "July 7 1882 – June 28, 1942",
+    "location": "loc",
+    "bio": "А Belarusian poet and writer. Kupala is considered one of the greatest Belarusian-language writers of the 20th century.",
+    "timeline": [
+      {
+        "time": "1882",
+        "description": "Kupala was born on July 7, 1882 in Viazynka, a folwark settlement near Maladzyechna. His family was noble, although both of Kupala's parents were employed as tenant farmers at the folwark."
+      },
+      {
+        "time": "1898",
+        "description": "Kupala received a traditional Belarusian education, completing his studies in 1898."
+      }
+    ],
+    "poems": [
+      {
+        "poemYear": "1908",
+        "poem": "«Жалейка»"
+      },
+      {
+        "poemYear": "1910",
+        "poem": "«Гусляр»"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=9FZehV2qJTk"
+  },
+  "ru": {
+    "name": "ru",
+    "yearsOfLife": "123",
+    "location": "loc",
+    "bio": "rdfgdfgdf",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "sdfsdf"
+      }
+    ],
+    "poems": [
+      {
+        "poemYear": "1980",
+        "poem": "sdfsd"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=9FZehV2qJTk"
+  },
+  "be": {
+    "name": "by",
+    "yearsOfLife": "123",
+    "location": "loc",
+    "bio": "dfgdfgdfgd",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "sdfs"
+      }
+    ],
+    "poems": [
+      {
+        "poemYear": "1980",
+        "poem": "sdf"
+      }
+    ],
+    "video": "https://www.youtube.com/watch?v=9FZehV2qJTk"
+  },
+  "galleryImages": [
+    {
+      "image": "/assets/images/uploads/yanka_kupala.jpg"
+    }
+  ]
+}
