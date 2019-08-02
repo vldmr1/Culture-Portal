@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { injectIntl } from "gatsby-plugin-intl"
 
-const SecondPage = () => (
+const Poets = () => (
   <Layout>
     <SEO title="Page two" />
     <h1>Hi from Poets Page</h1>
@@ -15,4 +16,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default injectIntl(Poets)
