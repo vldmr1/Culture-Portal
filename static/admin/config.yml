@@ -19,7 +19,7 @@ collections:
     fields:
      - {label: "ID", name: id, widget: "string"}
      - {label: "Years of life / Годы жизни / Гады Жыцця", name: "yearsOfLife", widget: "string"}
-     - {label: "Photo / Фото / фота", name: "photo", widget: "string"}
+     - {label: "Photo / Фото / фота", name: "photo", widget: "image"}
      - {label: "Video / Видео / Вiдэа", name: "video", widget: "string"}
      - {label: "Map id", name: "mapId", widget: "string"}
      - label: "Русский язык"
