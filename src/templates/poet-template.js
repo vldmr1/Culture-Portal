@@ -3,10 +3,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Video from "../components/Video/Video"
 import TimeLine from "../components/Timeline/Timeline"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 // import { FormattedMessage, injectIntl, Link } from "gatsby-plugin-intl"
 
-const PoetPage = ( {data } ) => {
+
+const PoetPage = ( {data} ) => {
   const info = [
     {date: "1917-1930", title: "Рождение", desc: "Родился 10 (23 августа) 1917 года в Ревеле (ныне Таллин, Эстония) в крестьянской семье, куда его родители переехали из Бегомля в поисках заработка. Семья была в очень тяжёлом положении: отец Пимена был на фронте и мать, Дарья Фокеевна, осталась одна с двумя детьми в неродном городе. В 1920 году она вместе с детьми вернулась на свою родину в Бегомль, в котором Пимен и провёл детство."},
     {date: "1933-1939", title: "Обучение и первый опыт написания", desc: "В 1933 году семья переехала в Бобруйск. Пимен начал работать на деревообрабатывающем комбинате, а после поступил на учительские курсы. Через год, окончив курсы, начал работать учителем в школах Бобруйского и Кировского районов. Одновременно учился на заочном отделении филологического факультета Минского учительского института, который закончил в 1939 году. Стихи начал писать в юности. Дебютировал в 1934 году в кировской районной газете «Кировец» и альманахе «Ударники» (стихотворении «Ураджайнае» и «Моладзі»). Член Союза писателей СССР с 1939 года. "},
@@ -15,12 +16,14 @@ const PoetPage = ( {data } ) => {
     {date: "1995", title: "Смерть", desc: "Умер 2 апреля 1995 года. Похоронен в Минске на Восточном кладбище."}
   ]
 
+  let lang = 'ru';
+  let name = data.poetsJson[lang].name;
+
   return (
     <Layout>
       <SEO title="Page two" />
       <h1>
-        {data.poetsJson.en.name}
-        {/* <FormattedMessage id="main_page_header" /> */}
+        {name}
       </h1>
       <TimeLine info={info}/>
       <Video
@@ -38,6 +41,9 @@ query($slug: String!) {
   poetsJson(fields: { slug: { eq: $slug } }) {
     id
     en {
+      name
+    }
+    ru {
       name
     }
   }

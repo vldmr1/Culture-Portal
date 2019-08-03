@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Search from "../components/Search/Search"
+import { injectIntl } from "gatsby-plugin-intl"
 
 const autorsList = [
     "Пимен Емельянович Панченко",
@@ -19,4 +20,4 @@ const SearchPage = () => (
   </Layout>
 )
 
-export default SearchPage
+export default injectIntl(SearchPage);

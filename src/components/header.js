@@ -1,10 +1,11 @@
-import { Link } from "gatsby"
+import { Link, FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import React from "react"
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import './bootstrap.min.css';
+import Language from "./language"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, intl }) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -23,22 +24,26 @@ const Header = ({ siteTitle }) => (
       <Row>
         <Col md={6} sm={12}>
           <Link style={{paddingRight: '20px'}}  to="/">
-            <Button variant="info">Home</Button>
+            <Button variant="info" >
+              {intl.formatMessage({ id: "home_link" })}
+            </Button>
           </Link>
           <Link style={{paddingRight: '20px'}} to="/poets">
-            <Button variant="info">Poets</Button>
+            <Button variant="info">
+              {intl.formatMessage({ id: "poets_link" })}
+            </Button>
           </Link>
           <Link style={{paddingRight: '20px'}} to="/developers">
-            <Button variant="info">About us</Button>
+            <Button variant="info">
+            {intl.formatMessage({ id: "developers_link" })}
+            </Button>
           </Link>
         </Col>
         <Col md={{ span: 4, offset: 2 }} sm={12} style={{textAlign: 'right'}}>
-          Language:
-          <Button style={{margin: '5px'}} variant="primary" size="sm">en</Button>
-          <Button style={{margin: '5px'}} variant="primary" size="sm">ru</Button>
-          <Button style={{margin: '5px'}} variant="primary" size="sm">by</Button>
+          <Language />
         </Col>
       </Row>
+
     </Container>
   </header>
 )
@@ -51,4 +56,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default injectIntl(Header)
