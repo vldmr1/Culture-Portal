@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
+import AuthorOfTheDay from '../components/AuthorOfTheDay/AuthorOfTheDay';
 
 const IndexPage = ({ intl }) => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = ({ intl }) => (
     </p>
     <h2>
       <FormattedMessage id="author_of_the_day_title" />
+      <AuthorOfTheDay/>
     </h2>
   </Layout>
 )
