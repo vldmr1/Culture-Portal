@@ -4,7 +4,8 @@ import SEO from "../components/seo"
 import Video from "../components/Video/Video"
 import TimeLine from "../components/Timeline/Timeline"
 import WorksList from "../components/WorksList/WorksList"
-import { graphql, Link } from "gatsby"
+import Map from "../components/Map/Map"
+import { graphql } from "gatsby"
 import { injectIntl } from "gatsby-plugin-intl"
 
 
@@ -20,7 +21,7 @@ const PoetPage = ( { data, intl} ) => {
         id={data.poetsJson.video}
       />
       <WorksList worksList={data.poetsJson[intl.locale].works_list} />
-      <Link to="/">Go back to the homepage</Link>
+      <Map id={data.poetsJson.mapId}/>
     </Layout>
   )
 };
