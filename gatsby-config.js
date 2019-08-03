@@ -7,10 +7,26 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`en`, `ru`, `be`],
+        defaultLanguage: `en`,
+        redirect: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `poets`,
+        path: `${__dirname}/src/content/poets`,
       },
     },
     `gatsby-plugin-netlify-cms`,
