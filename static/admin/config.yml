@@ -18,6 +18,10 @@ collections:
     filter: {field: "language", value: "en"}
     fields:
      - {label: "ID", name: id, widget: "string"}
+     - {label: "Years of life / Годы жизни / Гады Жыцця", name: "yearsOfLife", widget: "string"}
+     - {label: "Photo / Фото / фота", name: "photo", widget: "string"}
+     - {label: "Video / Видео / Вiдэа", name: "video", widget: "string"}
+     - {label: "Map id", name: "mapId", widget: "string"}
      - label: "English language"
        name: "en"
        widget: "object"
@@ -54,12 +58,6 @@ collections:
                 - label: "Date"
                   name: "date"
                   widget: "string"
-        - label: "Video"
-          name: "video"
-          widget: "string"
-        - label: "Map id"
-          name: "mapId"
-          widget: "string"
      - label: "Русский язык"
        name: "ru"
        widget: "object"
@@ -96,12 +94,6 @@ collections:
                 - label: "Год выхода произведения"
                   name: "date"
                   widget: "string"
-        - label: "Видео"
-          name: "video"
-          widget: "string"
-        - label: "Карта id"
-          name: "mapId"
-          widget: "string"
      - label: "Беларуская мова"
        name: "be"
        widget: "object"
@@ -138,12 +130,6 @@ collections:
                 - label: "Год выхаду твора"
                   name: "date"
                   widget: "string"
-        - label: "Відэа"
-          name: "video"
-          widget: "string"
-        - label: "Карта id"
-          name: "mapId"
-          widget: "string"
      - label: "Gallery/Галерея/Галерэя"
        name: "galleryImages"
        widget: "list"
@@ -151,4 +137,3 @@ collections:
         - label: "Image/Изображение/Малюнак"
           name: "image"
           widget: image
-        
