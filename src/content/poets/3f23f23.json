@@ -1,0 +1,61 @@
+{
+  "id": "3f23f23",
+  "en": {
+    "name": "sdfads",
+    "yearsOfLife": "asdff",
+    "location": "asdf",
+    "desc": "asdff",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "sdfsdf"
+      }
+    ],
+    "video": "asdf",
+    "mapId": "asdf"
+  },
+  "ru": {
+    "name": "sdf",
+    "yearsOfLife": "adsf",
+    "location": "adfs",
+    "desc": "sdfsdf",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "sdfsdfsdf"
+      }
+    ],
+    "video": "asdf",
+    "mapId": "sdf"
+  },
+  "be": {
+    "name": "adf",
+    "yearsOfLife": "asdf",
+    "location": "asdf",
+    "desc": "asdf",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "sdfsdf"
+      }
+    ],
+    "poems": [
+      {
+        "group": "sdfsdf",
+        "works": [
+          {
+            "name": "sdf",
+            "date": "sdf"
+          }
+        ]
+      }
+    ],
+    "video": "asdf",
+    "mapId": "sdfsf"
+  },
+  "galleryImages": [
+    {
+      "image": "/assets/images/uploads/rickastley.jpg"
+    }
+  ]
+}
