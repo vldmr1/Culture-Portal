@@ -3,49 +3,90 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Video from "../components/Video/Video"
 import TimeLine from "../components/Timeline/Timeline"
+import WorksList from "../components/WorksList/WorksList"
 import { graphql, Link } from "gatsby"
-// import { FormattedMessage, injectIntl, Link } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
 
-const PoetPage = ( {data} ) => {
-  const info = [
-    {date: "1917-1930", title: "Рождение", desc: "Родился 10 (23 августа) 1917 года в Ревеле (ныне Таллин, Эстония) в крестьянской семье, куда его родители переехали из Бегомля в поисках заработка. Семья была в очень тяжёлом положении: отец Пимена был на фронте и мать, Дарья Фокеевна, осталась одна с двумя детьми в неродном городе. В 1920 году она вместе с детьми вернулась на свою родину в Бегомль, в котором Пимен и провёл детство."},
-    {date: "1933-1939", title: "Обучение и первый опыт написания", desc: "В 1933 году семья переехала в Бобруйск. Пимен начал работать на деревообрабатывающем комбинате, а после поступил на учительские курсы. Через год, окончив курсы, начал работать учителем в школах Бобруйского и Кировского районов. Одновременно учился на заочном отделении филологического факультета Минского учительского института, который закончил в 1939 году. Стихи начал писать в юности. Дебютировал в 1934 году в кировской районной газете «Кировец» и альманахе «Ударники» (стихотворении «Ураджайнае» и «Моладзі»). Член Союза писателей СССР с 1939 года. "},
-    {date: "1939-1946", title: "Военные годы", desc: "С сентября 1939 по январь 1946 года служил специальным корреспондентом и писателем в армейских газетах. Принимал участие в Польском походе РККА 1939 года, во время Великой Отечественной войны был на фронтах – Брянском, Калининском и Северо-Западном. Работал во фронтовых газетах «За свабодную Беларусь», сатирической «Партызанскай дубінцы», а также в газете «Героический штурм». В 1943 году награждён медалью «За боевые заслуги». В 1944 году был в Иране."},
-    {date: "1946-1966", title: "Послевоенные годы", desc: "После демобилизации в 1946 году вернулся в Минск и начал работать в журнале «Вожык». Позже перешёл в газету «Літаратура і мастацтва». С 1953 по 1958 годы работал редактором альманаха «Советская Отчизна». Возглавлял журнал «Маладосць». В 1966 году был назначен секретарём правления СП Белоруссии. Был депутатом ВС БССР 5, 6, 8 созывов."},
-    {date: "1995", title: "Смерть", desc: "Умер 2 апреля 1995 года. Похоронен в Минске на Восточном кладбище."}
-  ]
-
-  let lang = 'ru';
-  let name = data.poetsJson[lang].name;
-
+const PoetPage = ( { data, intl} ) => {
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title={data.poetsJson[intl.locale].name} />
       <h1>
-        {name}
+        {data.poetsJson[intl.locale].name}
       </h1>
-      <TimeLine info={info}/>
+      <TimeLine info={data.poetsJson[intl.locale].timeline}/>
       <Video
-        id="fvkncCBSxFI"
+        id={data.poetsJson.video}
       />
+      <WorksList worksList={data.poetsJson[intl.locale].works_list} />
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 };
 
-export default PoetPage;
+export default injectIntl(PoetPage);
 
 export const query = graphql`
 query($slug: String!) {
   poetsJson(fields: { slug: { eq: $slug } }) {
     id
-    en {
-      name
-    }
+    yearsOfLife
+    photo
+    video
+    mapId
     ru {
       name
+      location
+      bio
+      timeline {
+        time
+        title
+        desc
+      }
+      works_list {
+        group
+        works {
+          name
+          date
+        }
+      }
     }
+    be {
+      name
+      location
+      bio
+      timeline {
+        time
+        title
+        desc
+      }
+      works_list {
+        group
+        works {
+          name
+          date
+        }
+      }
+    }
+    en {
+      name
+      location
+      bio
+      timeline {
+        time
+        title
+        desc
+      }
+      works_list {
+        group
+        works {
+          name
+          date
+        }
+      }
+    }
+    gallery
   }
 }
 `
