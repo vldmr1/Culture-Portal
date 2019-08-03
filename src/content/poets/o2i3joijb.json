@@ -1,0 +1,78 @@
+{
+  "id": "o2i3joijb",
+  "en": {
+    "name": "owie",
+    "yearsOfLife": "24234-44234",
+    "location": "Okpom",
+    "desc": "sdfsdf",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "sdfsdfsdff"
+      }
+    ],
+    "poems": [
+      {
+        "group": "vvsdfsdf",
+        "works": [
+          {
+            "name": "sdfsdf",
+            "date": "213123"
+          }
+        ]
+      }
+    ],
+    "video": "sdfsdasdf",
+    "mapId": "sdfasdfasdfasdf"
+  },
+  "ru": {
+    "name": "ываушцгшгт",
+    "yearsOfLife": "38498394",
+    "location": "Okpom",
+    "desc": "ываываываыв",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "фывафыва"
+      }
+    ],
+    "poems": [
+      {
+        "group": "ываыва",
+        "works": [
+          {
+            "name": "ыва",
+            "date": "ыв"
+          }
+        ]
+      }
+    ],
+    "video": "ываыва",
+    "mapId": "asdfw"
+  },
+  "be": {
+    "name": "цуауа",
+    "yearsOfLife": "23423 ",
+    "location": "фафвыа",
+    "desc": "фывфыв",
+    "timeline": [
+      {
+        "time": "1980",
+        "description": "мчсм"
+      }
+    ],
+    "poems": [
+      {
+        "group": "чсмымым",
+        "works": [
+          {
+            "name": "ываыва",
+            "date": "ываыва"
+          }
+        ]
+      }
+    ],
+    "video": "ываыва",
+    "mapId": "ываыва"
+  }
+}
