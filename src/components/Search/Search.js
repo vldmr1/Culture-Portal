@@ -13,7 +13,7 @@ class Search extends Component {
         }
         this.searchFilter = this.searchFilter.bind(this);
     }
-    
+
     searchFilter(e){
         this.setState({
             autorsFilter: this.state.autors.filter((autor) => {
@@ -39,7 +39,7 @@ class Search extends Component {
                     </ul>
                 </Col>
             </Row>
-        </Container>        
+        </Container>
       );
     }
   }

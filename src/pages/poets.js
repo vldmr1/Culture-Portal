@@ -1,19 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Search from "../components/Search/Search"
+import getAutorsList from "../utilities/getAutorsList/getAuthorsList"
 import { injectIntl } from "gatsby-plugin-intl"
 
-const Poets = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from Poets Page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-    <br />
-    <Link to="/poets/poet">Great Poet</Link>
-  </Layout>
-)
+const autorsList = [
+    "Пимен Емельянович Панченко",
+    "Рыгор (Григорий) Иванович Бородулин",
+    "Якуб Колас",
+    "Янка Купала",
+    "Максим Адамович Богданович"
+];
 
-export default injectIntl(Poets)
+const SearchPage = ({ intl }) => {
+  const poetList = getAutorsList();
+  console.log(poetList);
+
+  return (
+    <Layout>
+      <SEO title="Search" />
+      <Search autorsList={autorsList}/>
+    </Layout>
+  )
+}
+
+export default injectIntl(SearchPage);
