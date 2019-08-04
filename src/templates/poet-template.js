@@ -5,6 +5,8 @@ import Video from "../components/Video/Video"
 import TimeLine from "../components/Timeline/Timeline"
 import WorksList from "../components/WorksList/WorksList"
 import Map from "../components/Map/Map"
+import Image from "../components/Image/Image"
+import Gallery from "../components/Gallery/Gallery"
 import { graphql } from "gatsby"
 import { injectIntl } from "gatsby-plugin-intl"
 
@@ -16,12 +18,14 @@ const PoetPage = ( { data, intl} ) => {
       <h1>
         {data.poetsJson[intl.locale].name}
       </h1>
+      <Image src={data.poetsJson.photo} />
       <TimeLine info={data.poetsJson[intl.locale].timeline}/>
       <Video
         id={data.poetsJson.video}
       />
       <WorksList worksList={data.poetsJson[intl.locale].works_list} />
       <Map id={data.poetsJson.mapId}/>
+      <Gallery images={data.poetsJson.gallery} />
     </Layout>
   )
 };
