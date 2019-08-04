@@ -13,12 +13,12 @@ import finnibyhImage from "../assets/images/finnibyh.jpg"
 const Developers = () => (
   <Layout>
     <SEO title="Our Team" />
-    <h1 style={{background: 'pink',
-                margin: 0}}>
-    Rolling Scopes School team #27</h1>
+    <h1 style={{
+      textAlign: `center`,
+      margin: 0}}>
+    ROLLING SCOPES SCHOOL TEAM #27</h1>
     <div 
       style={{
-        background: `pink`,
         display: `flex`,
         flexWrap: `wrap`,
         justifyContent: `center`,
