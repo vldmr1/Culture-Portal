@@ -3,18 +3,17 @@ import PropTypes from "prop-types"
 import { injectIntl } from "gatsby-plugin-intl"
 
 import Header from "./header"
+import Footer from "./footer"
 // import "./layout.css"
 
 const Layout = ({ children, intl }) => {
 
   return (
     <>
-      <Header siteTitle={intl.formatMessage({ id: "main_heading" })} />
-      <div>
-        <main>{children}</main>
-        <footer>
-          Footer
-        </footer>
+      <div className="body-page">
+        <Header siteTitle={intl.formatMessage({ id: "main_heading" })} />
+        <main style={{}}>{children}</main>
+        <Footer></Footer>
       </div>
     </>
   )

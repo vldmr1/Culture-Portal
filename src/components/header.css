@@ -1,0 +1,31 @@
+.page-header{
+    background-color: #faebd7;
+    padding: 5px 0 15px;
+}
+
+.page-header__menu{
+    text-align: right;
+}
+
+.page-header__menu button{
+    background-color: inherit;
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+.page-header__menu button:hover{
+    background-color: #ffca83;
+    color: #9b9b9b;
+}
+
+
+.page-header__language-menu button{
+    background-color: inherit;
+    border: none;
+    font-size: 12px;
+}
+
+.page-header__language-menu button:hover{
+    background-color: #ffd9a6;
+}
