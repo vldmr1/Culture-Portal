@@ -8,7 +8,13 @@
   "poets_page_title": "Belarusian poets",
   "search_input_placeholder": "Search",
   "team_title": "Developers",
+<<<<<<< HEAD
   "go_to": "Go",
   "watch_video": "Watch video",
   "main_page_introduction": "Lorem Ipsum is simply dummy text of the printing\nand typesetting industry. Lorem Ipsum has been the industry's\nstandard dummy text ever since the 1500s, when an unknown printer\ntook a galley of type and scrambled it to make a type specimen book."
+=======
+  "main_page_introduction": "Lorem Ipsum is simply dummy text of the printing\nand typesetting industry. Lorem Ipsum has been the industry's\nstandard dummy text ever since the 1500s, when an unknown printer\ntook a galley of type and scrambled it to make a type specimen book.",
+  "video_button": "Watch Video",
+  "dev_team": "ROLLING SCOPES SCHOOL TEAM #27"
+>>>>>>> bd13c091eeb2bf14e731157eb0c9e2f95ddac2b7
 }

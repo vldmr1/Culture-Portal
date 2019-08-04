@@ -8,7 +8,13 @@
   "poets_page_title": "Беларускія паэты",
   "search_input_placeholder": "Шукаць",
   "team_title": "Распрацоўшчыкі",
+<<<<<<< HEAD
   "go_to": "Перайсці",
   "watch_video": "Глядзець вiдэа",
   "main_page_introduction": "Lorem Ipsum is simply dummy text of the printing\nand typesetting industry. Lorem Ipsum has been the industry's\nstandard dummy text ever since the 1500s, when an unknown printer\ntook a galley of type and scrambled it to make a type specimen book."
+=======
+  "main_page_introduction": "Lorem Ipsum is simply dummy text of the printing\nand typesetting industry. Lorem Ipsum has been the industry's\nstandard dummy text ever since the 1500s, when an unknown printer\ntook a galley of type and scrambled it to make a type specimen book.",
+  "video_button": "Глядзець Відэа",
+  "dev_team": "КАМАНДА РАСПРАЦОЎКI ШКОЛЫ ROLLING SCOPES #27"
+>>>>>>> bd13c091eeb2bf14e731157eb0c9e2f95ddac2b7
 }

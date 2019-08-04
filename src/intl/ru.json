@@ -8,7 +8,13 @@
   "poets_page_title": "Белорусские поэты",
   "search_input_placeholder": "Искать",
   "team_title": "Разработчики",
+<<<<<<< HEAD
   "go_to": "Перейти",
   "watch_video": "Смотреть видео",
   "main_page_introduction": "Lorem Ipsum is simply dummy text of the printing\nand typesetting industry. Lorem Ipsum has been the industry's\nstandard dummy text ever since the 1500s, when an unknown printer\ntook a galley of type and scrambled it to make a type specimen book."
+=======
+  "main_page_introduction": "Lorem Ipsum is simply dummy text of the printing\nand typesetting industry. Lorem Ipsum has been the industry's\nstandard dummy text ever since the 1500s, when an unknown printer\ntook a galley of type and scrambled it to make a type specimen book.",
+  "video_button": "Смотреть Видео",
+  "dev_team": "КОМАНДА РАЗРАБОТКИ ШКОЛЫ ROLLING SCOPES # 27"
+>>>>>>> bd13c091eeb2bf14e731157eb0c9e2f95ddac2b7
 }

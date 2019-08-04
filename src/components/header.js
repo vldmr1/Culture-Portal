@@ -2,27 +2,20 @@ import { Link, FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import React from "react"
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import './bootstrap.min.css';
+// import './bootstrap.min.css';
 import Language from "./language"
+import './header.css'
 
 const Header = ({ siteTitle, intl }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      color: 'white',
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header className="page-header">
     <Container>
       <Row>
-        <Col>
+        <Col md={6} sm={12} >
           <h1>
             {siteTitle}
           </h1>
         </Col>
-      </Row>
-      <Row>
-        <Col md={6} sm={12}>
+        <Col md={6} sm={12} className="my-auto page-header__menu">
           <Link style={{paddingRight: '20px'}}  to="/">
             <Button variant="info" >
               {intl.formatMessage({ id: "home_link" })}
@@ -33,13 +26,15 @@ const Header = ({ siteTitle, intl }) => (
               {intl.formatMessage({ id: "poets_link" })}
             </Button>
           </Link>
-          <Link style={{paddingRight: '20px'}} to="/developers">
+          <Link to="/developers">
             <Button variant="info">
             {intl.formatMessage({ id: "developers_link" })}
             </Button>
           </Link>
         </Col>
-        <Col md={{ span: 4, offset: 2 }} sm={12} style={{textAlign: 'right'}}>
+      </Row>
+      <Row>
+        <Col md={{ span: 4, offset: 8 }} sm={12} style={{textAlign: 'right'}} className="page-header__language-menu">
           <Language />
         </Col>
       </Row>

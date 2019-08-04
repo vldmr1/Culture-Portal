@@ -18,7 +18,8 @@ const Language = () => {
             <Button
               style={{
                 margin: '5px',
-                color: currentLocale === language ? '#ffef00' : '#FFFFFF'
+                textDecoration: currentLocale === language ? 'underline' : 'none',
+                color: currentLocale === language ? '#000000' : '#929292'
               }}
               variant="primary"
               size="sm"
