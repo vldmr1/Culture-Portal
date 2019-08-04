@@ -5,6 +5,8 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Video from "../../components/Video/Video"
 import TimeLine from "../../components/Timeline/Timeline"
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
+
 
 const info = [ //*****Only for example*****
   {time: "1917-1930", title: "Рождение", desc: "Родился 10 (23 августа) 1917 года в Ревеле (ныне Таллин, Эстония) в крестьянской семье, куда его родители переехали из Бегомля в поисках заработка. Семья была в очень тяжёлом положении: отец Пимена был на фронте и мать, Дарья Фокеевна, осталась одна с двумя детьми в неродном городе. В 1920 году она вместе с детьми вернулась на свою родину в Бегомль, в котором Пимен и провёл детство."},
@@ -14,16 +16,19 @@ const info = [ //*****Only for example*****
   {time: "1995", title: "Смерть", desc: "Умер 2 апреля 1995 года. Похоронен в Минске на Восточном кладбище."}
 ]
 
-const SecondPage = () => (
+const SecondPage = ({ intl }) => (
+  
   <Layout>
+    
     <SEO title="Page two" />
     <h1>Hi, this is poet card</h1>
     <TimeLine info={info}/>
     <Video
       id="fvkncCBSxFI"
+      intl={intl}
     />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 );
 
-export default SecondPage
+export default injectIntl(SecondPage)

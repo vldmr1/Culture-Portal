@@ -15,6 +15,7 @@ class VideoAboutAuthor extends Component {
     render(){
         const {isModalOpen} = this.state;
         const {id} = this.props;
+        const {intl} = this.props;
         const url = "https://www.youtube.com/embed/" + id;
 
 
