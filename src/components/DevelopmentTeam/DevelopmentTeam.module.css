@@ -1,36 +1,44 @@
-.team {
-    background: pink;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .teamMember {
     margin: 20px;
     width: 250px;
     height: 400px;
-    background: white;
+    box-shadow: 0 3px 5px 1px rgb(146, 127, 127);
+}
+
+.teamMember h3, a {
+    color: black;
+    transition: color 1s;
+}
+
+.teamMember h3:hover, a:hover {
+    color: blue;
+    text-decoration: none;
 }
 
 .memberAvatar {
-    width: 100%;
     overflow: hidden;
     height: 250px;
 }
 
 .memberAvatar img {
     margin-bottom: 0;
+    width: 100%;
 }
 
 .teamMember h3 {
     text-align: left;
     height: 80px;
     margin: 10px 0 0 20px;
+    cursor: default;
 }
 
 span {
     display: flex;
     margin-left: 20px;
+}
+
+span a {
+    font-size: 14pt;
 }
 
 span img {

@@ -13,7 +13,6 @@ const Group = ({group}) => (
                     </thead>
                     <tbody>
                     {group.works.map(work => 
-                            
                                 <tr>
                                     <td>
                                         {work.name}
