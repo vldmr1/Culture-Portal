@@ -1,0 +1,134 @@
+backend:
+  name: git-gateway
+  repo: vldmr1/Culture-Portal
+  branch: develop
+
+media_folder: src/assets/images/uploads
+public_folder: assets/images/uploads
+# publish_mode: editorial_workflow
+
+collections:
+  - label: "Poets"
+    name: "poet"
+    folder: "src/content/poets"
+    create: true
+    identifier_field: id
+    format: json
+    extension: json
+    filter: { field: "language", value: "en" }
+    fields:
+     - { label: "ID", name: id, widget: "string", hint: format should be similar to john_doe }
+     - { label: "Years of life / Годы жизни / Гады Жыцця", name: "yearsOfLife", widget: "string", hint: DD/MM/YYYY (ДД/ММ/ГГГГ) }
+     - { label: "Photo / Фото / фота", name: "photo", widget: "image", hint: format must be jpeg/jpg/png }
+     - { label: "Video / Видео / Вiдэа", name: "video", widget: "string", hint: youtube ID, for example 'dQw4w9WgXcQ' }
+     - { label: "Map id", name: "mapId", widget: "string", hint: google map id, for example '1M2HXc1LeM9Qq8bOl3R7ueYmuLMgfnzB0' }
+     - label: "Русский язык"
+       name: "ru"
+       widget: "object"
+       fields:
+        - { label: "Имя", name: "name", widget: "string", hint: например Василий Пупков }
+        - { label: "Место", name: "location", widget: "string", hint: например Гродно }
+        - { label: "Биография", name: "desc", widget: "markdown", hint: основная информация }
+        - label: "Хронология"
+          hint: Информация о важнейших событиях в жизни поэта
+          name: "timeline"
+          widget: "list"
+          fields:
+            - { label: "Время", name: "time", widget: "string", default: "1980" }
+            - { label: "Заголовок", name: "title", widget: "string", }
+            - { label: "Описание", name: "description", widget: "string" }
+        - label: "Произведения"
+          hint: Важнейшие работы
+          name: "poems"
+          widget: "list"
+          fields:
+            - label: "Group name"
+              name: "group"
+              widget: "string"
+              hint: например поэзия, драматургия, детская литература и тд
+            - label: "Works"
+              name: "works"
+              widget: "list"
+              fields:
+                - label: "Название произведения"
+                  name: "name"
+                  widget: "string"
+                - label: "Год выхода произведения"
+                  name: "date"
+                  widget: "string"
+     - label: "Беларуская мова"
+       name: "be"
+       widget: "object"
+       fields:
+        - { label: "Імя", name: "name", widget: "string", hint: імя напрыклад Васіль Пупко }
+        - { label: "Месца", name: "location", widget: "string", hint: напрыклад Гродна }
+        - { label: "Біяграфія", name: "desc", widget: "markdown", hint: асноўная інфармацыя }
+        - label: "Храналогія"
+          hint: Інфармацыя пра найважнейшыя падзеі ў жыцці паэта
+          name: "timeline"
+          widget: "list"
+          fields:
+            - { label: "Час", name: "time", widget: "string", default: "1980" }
+            - { label: "Загаловак", name: "title", widget: "string" }
+            - { label: "Апісанне", name: "description", widget: "string" }
+        - label: "Творы"
+          hint: важнейшыя працы
+          name: "poems"
+          widget: "list"
+          fields:
+            - label: "Group name"
+              name: "group"
+              hint: напрыклад паэзія, драматургія, дзіцячая літаратура і тд
+              widget: "string"
+            - label: "Works"
+              name: "works"
+              widget: "list"
+              fields:
+                - label: "Назва твора"
+                  name: "name"
+                  widget: "string"
+                - label: "Год выхаду твора"
+                  name: "date"
+                  widget: "string"
+     - label: "English language"
+       name: "en"
+       widget: "object"
+       fields:
+        - { label: "Name", name: "name", widget: "string", hint: for example John Smith }
+        - { label: "Location", name: "location", widget: "string", hint: for example Hrodna }
+        - { label: "Bio", name: "desc", widget: "markdown", hint: main information  }
+        - label: "Timeline"
+          name: "timeline"
+          hint: poet's milestones
+          widget: "list"
+          fields:
+            - { label: "Time", name: "time", widget: "string", default: "1980" }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Description", name: "description", widget: "string" }
+        - label: "Poems"
+          name: "poems"
+          hint: major works
+          widget: "list"
+          fields:
+            - label: "Group name"
+              name: "group"
+              hint: for example poetry, kid's literature, etc
+              widget: "string"
+            - label: "Works"
+              name: "works"
+              widget: "list"
+              fields:
+                - label: "Name"
+                  name: "name"
+                  widget: "string"
+                - label: "Date"
+                  name: "date"
+                  widget: "string"
+     - label: "Gallery/Галерея/Галерэя"
+       name: "galleryImages"
+       hint: format must be jpeg/jpg/png
+       widget: "list"
+       fields:
+        - label: "Image/Изображение/Малюнак"
+          name: "image"
+          widget: image

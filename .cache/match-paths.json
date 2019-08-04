@@ -1,0 +1,14 @@
+[
+    {
+        "path": "/en/404/",
+        "matchPath": "/en/*"
+    },
+    {
+        "path": "/ru/404/",
+        "matchPath": "/ru/*"
+    },
+    {
+        "path": "/be/404/",
+        "matchPath": "/be/*"
+    }
+]
