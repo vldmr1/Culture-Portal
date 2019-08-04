@@ -2,13 +2,14 @@ import React from 'react';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from "./AboutAuthor.module.css";
+import Image from "../Image/Image"
 
 const AboutAuthor = ({ picture, name, date, description }) => (
     <Container>
       <Row>
         <Col className = {styles.poetContent}>
       <div className = {styles.poetImage}>
-        <img src={picture} alt="Author's picture"/>
+        <Image src={picture} />
       </div>
       <div className = {styles.poetTitle}>
         {name}
