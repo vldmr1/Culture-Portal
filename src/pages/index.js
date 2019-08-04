@@ -1,5 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
+// import { Card } from 'react-bootstrap';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,10 +16,10 @@ const IndexPage = ({ intl }) => (
     <p>
       <FormattedMessage id="main_page_introduction" />
     </p>
-    <h2>
-      <FormattedMessage id="author_of_the_day_title" />
-      <AuthorOfTheDay/>
-    </h2>
+    
+    <AuthorOfTheDay
+      message={<FormattedMessage id="author_of_the_day_title" />}
+    />
   </Layout>
 )
 
