@@ -30,11 +30,15 @@ const Image = function(props) {
         }
       `}
 
-      render={({ images }) =>
-        renderImage(images.edges.find(image => {
-            return image.node.relativePath === props.src;
-        }))
-      }
+      render={({ images }) => {
+        if (images.edges.length) {
+          return renderImage(images.edges.find(image => {
+              return image.node.relativePath === props.src;
+          }))
+        }
+
+        return null;
+      }}
     />
   )
 }
