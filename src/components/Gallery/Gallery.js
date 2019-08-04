@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./Gallery.module.css"
+import Image from "../Image/Image"
+
 
 const Gallery = (props) => {
   const settings = {
@@ -23,7 +25,7 @@ const Gallery = (props) => {
             {props.images.map( (index) => {
               return (
                 <div>
-                  <img src={index} alt="" className={style.imgSize}/>
+                  <Image src={index} alt="" className={style.imgSize}/>
                 </div>
               )
             })}
