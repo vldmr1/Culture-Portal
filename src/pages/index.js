@@ -18,6 +18,7 @@ const IndexPage = ({ intl }) => (
     </p>
     
     <AuthorOfTheDay
+      intl={intl}
       message={<FormattedMessage id="author_of_the_day_title" />}
     />
   </Layout>

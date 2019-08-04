@@ -1,10 +1,12 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { Link } from "gatsby-plugin-intl"
 
 import AboutAuthor from '../AboutAuthor/AboutAuthor';
 import Video from '../Video/Video';
 
 const AuthorOfTheDay = (props) => {
+    console.log('prps--', props);
     
    return (
     <>
@@ -22,6 +24,11 @@ const AuthorOfTheDay = (props) => {
                 <Video
                     id="FRfHUhw9KkI"
                 />
+                <Link style={{paddingRight: '20px'}} to="/">
+                    <Button variant="info">
+                        {props.intl.formatMessage({ id:"go_to" })}
+                    </Button>
+                </Link>
             </Card.Body>
         </Card>
             
