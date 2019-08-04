@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
 import { Link } from "gatsby-plugin-intl"
-
-import AboutAuthor from '../AboutAuthor/AboutAuthor';
-import Video from '../Video/Video';
+import { Container, Row, Col } from 'react-bootstrap';
+import Image from "../Image/Image"
 import GetAuthorsList from '../../utilities/getAutorsList/getAuthorsList'
+
+import './AuthorOfTheDay.css'
 
 
 function getList(){
@@ -28,30 +28,29 @@ const AuthorOfTheDay = (props) => {
 
    return (
     <>
-        <Card border="primary" style={{ width: '50%', margin: '0 auto' }}>
-            <Card.Header><h2>{props.message}</h2></Card.Header>
-            <Card.Body>
-                <Card.Title>
-                    <AboutAuthor
-                        picture={todayAuthor.photo}
-                        name={todayAuthor[props.intl.locale].name}
-                        date={todayAuthor.yearsOfLife}
-                        description={todayAuthor[props.intl.locale].bio}
-                    />
-                </Card.Title>
-                <Video
-                    intl={props.intl}
-                    id={todayAuthor.video}
-                />
-                <Link style={{paddingRight: '20px'}}>
-                    <Button variant="info">
-                        <Link to={`/${todayAuthor.id}`}>
-                            {props.intl.formatMessage({ id:"go_to" })}
-                        </Link>
-                    </Button>
-                </Link>
-            </Card.Body>
-        </Card>
+        <Container>
+            <Row className="about-autor">
+                <Col md={{ span: 5, offset: 1 }} sm={12}>
+                    <div className="about-autor__image  ">
+                        <Image src={todayAuthor.photo}/>
+                    </div>
+                </Col>
+                <Col md={5} sm={12} className="my-auto about-autor__wrap">
+                    <h3 className="about-autor__name">
+                        {todayAuthor[props.intl.locale].name} 
+                    </h3>
+                    <span className="about-autor__date">
+                        {todayAuthor.yearsOfLife}
+                    </span>
+                    <p className="about-autor__desc">
+                        {todayAuthor[props.intl.locale].bio}
+                    </p>
+                    <Link to={`/${todayAuthor.id}`}>
+                        {props.intl.formatMessage({ id:"go_to" })}
+                    </Link>
+                </Col>
+            </Row>
+        </Container>
     </>
     )
 }

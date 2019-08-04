@@ -16,7 +16,7 @@ const Developers = ({ intl }) => (
     <SEO title="Our Team" />
     <h1 style={{
       textAlign: `center`,
-      margin: 0}}>
+      margin: '70px 0px 10px'}}>
      {intl.formatMessage({ id: "dev_team" })}</h1>
     <div 
       style={{

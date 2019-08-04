@@ -9,11 +9,11 @@ import AuthorOfTheDay from '../components/AuthorOfTheDay/AuthorOfTheDay';
 const IndexPage = ({ intl }) => (
   <Layout>
     <SEO title="Home" />
+    <MainPageInfo />
     <AuthorOfTheDay
       intl={intl}
       message={<FormattedMessage id="author_of_the_day_title" />}
     />
-    <MainPageInfo />
   </Layout>
 )
 

@@ -17,7 +17,6 @@ class Search extends Component {
                 }
             }),
             autorsFilter: props.autorsList.map(function(item){
-                console.log(item[props.locale])
                 return {
                     id: item.id,
                     name: item[props.locale]
@@ -38,7 +37,6 @@ class Search extends Component {
     }
 
     render() {
-        console.log(this.state.autors)
       return (
         <Container className={"search"}>
             <Row>
