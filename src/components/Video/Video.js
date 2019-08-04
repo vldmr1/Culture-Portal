@@ -22,7 +22,7 @@ class VideoAboutAuthor extends Component {
         return(
             <>
                 <Button variant="primary" onClick={this.toggleModalWindow}>
-                {intl.formatMessage({ id:"watch_video" })}
+                    {intl.formatMessage({ id:"watch_video" })}
                 </Button>
                 <Modal show={isModalOpen} onHide={this.toggleModalWindow}>
                 <Modal.Header closeButton>

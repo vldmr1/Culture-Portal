@@ -19,8 +19,8 @@ function getList(){
 const AuthorOfTheDay = (props) => {
     const todayAuthor = getList();
     const pictureUrl = '../../assets/images/uploads/'+todayAuthor.photo;
-    const name= todayAuthor.name;
-    console.log('aut == ', pictureUrl, name);
+    // const name= todayAuthor.name;
+    console.log('aut == ', todayAuthor);
     
    return (
     <>
@@ -29,7 +29,7 @@ const AuthorOfTheDay = (props) => {
             <Card.Body>
                 <Card.Title>
                     <AboutAuthor
-                        picture={pictureUrl}
+                        picture='../../assets/images/uploads/Pimen_Panchenko.jpg'
                         name='Yakub Kolos'
                         date='1882-1956'
                         description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
