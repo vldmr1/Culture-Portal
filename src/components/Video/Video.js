@@ -11,7 +11,6 @@ class VideoAboutAuthor extends Component {
     } 
 
     render(){
-        console.log('this props--', this.props);
         
         const {isModalOpen} = this.state;
         const {id} = this.props;

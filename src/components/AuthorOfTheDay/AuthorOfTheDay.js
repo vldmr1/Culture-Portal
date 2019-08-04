@@ -9,18 +9,22 @@ import GetAuthorsList from '../../utilities/getAutorsList/getAuthorsList'
 
 function getList(){
     const getList = GetAuthorsList();
-    const today = new Date();
-    console.log('list -- ', getList, today.getDate());
-    
-    return getList[3];
+    const today = new Date().getDate();
+    let index = 2;
+
+    if ( today < getList.length){
+        index = today;
+    }
+    else{
+       index = Math.floor((today / getList.length)-1);
+    }
+    return getList[index];
 }
 
 
 const AuthorOfTheDay = (props) => {
     const todayAuthor = getList();
     const pictureUrl = '../../assets/images/uploads/'+todayAuthor.photo;
-    // const name= todayAuthor.name;
-    console.log('aut == ', todayAuthor);
     
    return (
     <>
@@ -29,15 +33,15 @@ const AuthorOfTheDay = (props) => {
             <Card.Body>
                 <Card.Title>
                     <AboutAuthor
-                        picture='../../assets/images/uploads/Pimen_Panchenko.jpg'
-                        name='Yakub Kolos'
-                        date='1882-1956'
-                        description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+                        picture={todayAuthor.photo}
+                        name={todayAuthor.ru.name}
+                        date={todayAuthor.yearsOfLife}
+                        description={todayAuthor.ru.bio}
                     />
                 </Card.Title>
                 <Video
                     intl={props.intl}
-                    id="FRfHUhw9KkI"
+                    id={todayAuthor.video}
                 />
                 <Link style={{paddingRight: '20px'}} to="/">
                     <Button variant="info">
