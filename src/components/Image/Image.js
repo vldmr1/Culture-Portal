@@ -3,7 +3,9 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 function renderImage(file) {
-    return file ? <Img fixed={file.node.childImageSharp.fixed} alt={file.node.name} /> : null;
+  file.node.childImageSharp.fixed.width = 500*file.node.childImageSharp.fixed.width/file.node.childImageSharp.fixed.height;
+  file.node.childImageSharp.fixed.height = 500;
+    return file ? <Img fixed={file.node.childImageSharp.fixed} alt={file.node.name}/> : null;
 }
 
 const Image = function(props) {
