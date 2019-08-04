@@ -19,7 +19,7 @@ const TimeLine = (props) => (
         return (
           <TimelineItem
             key={index}
-            dateText={el.date}
+            dateText={el.time}
             dateInnerStyle={{ background: generatedColor, color: "#fff" }}
             bodyContainerStyle={{ background: textStyle }}
             style={{ color: generatedColor }}>
