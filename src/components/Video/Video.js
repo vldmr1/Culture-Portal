@@ -11,15 +11,18 @@ class VideoAboutAuthor extends Component {
     } 
 
     render(){
+        console.log('this props--', this.props);
+        
         const {isModalOpen} = this.state;
         const {id} = this.props;
+        const {intl} = this.props;
         const url = "https://www.youtube.com/embed/" + id;
 
 
         return(
             <>
                 <Button variant="primary" onClick={this.toggleModalWindow}>
-                    Watch video
+                {intl.formatMessage({ id:"watch_video" })}
                 </Button>
                 <Modal show={isModalOpen} onHide={this.toggleModalWindow}>
                 <Modal.Header closeButton>

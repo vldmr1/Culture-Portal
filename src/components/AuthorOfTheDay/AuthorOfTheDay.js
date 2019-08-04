@@ -6,7 +6,6 @@ import AboutAuthor from '../AboutAuthor/AboutAuthor';
 import Video from '../Video/Video';
 
 const AuthorOfTheDay = (props) => {
-    console.log('prps--', props);
     
    return (
     <>
@@ -22,6 +21,7 @@ const AuthorOfTheDay = (props) => {
                     />
                 </Card.Title>
                 <Video
+                    intl={props.intl}
                     id="FRfHUhw9KkI"
                 />
                 <Link style={{paddingRight: '20px'}} to="/">
