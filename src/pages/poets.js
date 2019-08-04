@@ -6,22 +6,19 @@ import Search from "../components/Search/Search"
 import getAutorsList from "../utilities/getAutorsList/getAuthorsList"
 import { injectIntl } from "gatsby-plugin-intl"
 
-const autorsList = [
-    "Пимен Емельянович Панченко",
-    "Рыгор (Григорий) Иванович Бородулин",
-    "Якуб Колас",
-    "Янка Купала",
-    "Максим Адамович Богданович"
-];
-
 const SearchPage = ({ intl }) => {
-  const poetList = getAutorsList();
-  console.log(poetList);
-
+  const autorsList = getAutorsList().map(function(item) {
+    return {
+      id: item.id,
+      be: `${item.be.name}, ${item.be.location}`,
+      en: `${item.en.name}, ${item.en.location}`, 
+      ru: `${item.ru.name}, ${item.ru.location}`
+    }
+  });
   return (
     <Layout>
       <SEO title="Search" />
-      <Search autorsList={autorsList}/>
+      <Search autorsList={autorsList} locale={intl.locale}/>
     </Layout>
   )
 }

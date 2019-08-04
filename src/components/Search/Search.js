@@ -7,9 +7,22 @@ import "./search_module.css";
 class Search extends Component {
     constructor(props) {
         super(props);
+        this.locale = props.locale;
         this.state = {
-            autors: props.autorsList,
-            autorsFilter: props.autorsList
+            autors:  props.autorsList.map(function(item){
+                console.log(item[props.locale])
+                return {
+                    id: item.id,
+                    name: item[props.locale]
+                }
+            }),
+            autorsFilter: props.autorsList.map(function(item){
+                console.log(item[props.locale])
+                return {
+                    id: item.id,
+                    name: item[props.locale]
+                }
+            }),
         }
         this.searchFilter = this.searchFilter.bind(this);
     }
@@ -17,7 +30,7 @@ class Search extends Component {
     searchFilter(e){
         this.setState({
             autorsFilter: this.state.autors.filter((autor) => {
-                const str = autor.toLowerCase();
+                const str = autor.name.toLowerCase();
                 const val = e.target.value.toLowerCase();
                 return str.indexOf(val) !== -1 ? true : false
             } )
@@ -25,6 +38,7 @@ class Search extends Component {
     }
 
     render() {
+        console.log(this.state.autors)
       return (
         <Container className={"search"}>
             <Row>
@@ -35,7 +49,7 @@ class Search extends Component {
             <Row>
                 <Col>
                     <ul className={"search__name-list"}>
-                        {this.state.autorsFilter.map((item, num) => (<li key={num}><Link to="/">{item}</Link></li>))}
+                        {this.state.autorsFilter.map((item, num) => (<li key={num}><Link to={`/${item.id}`}>{item.name}</Link></li>))}
                     </ul>
                 </Col>
             </Row>
