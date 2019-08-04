@@ -5,6 +5,8 @@ import styles from "./AboutAuthor.module.css";
 import Image from "../Image/Image"
 
 const AboutAuthor = ({ picture, name, date, description }) => (
+  console.log('fff',picture),
+  
     <Container>
       <Row>
         <Col className = {styles.poetContent}>
