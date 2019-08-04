@@ -25,7 +25,7 @@ function getList(){
 const AuthorOfTheDay = (props) => {
     const todayAuthor = getList();
     const pictureUrl = '../../assets/images/uploads/'+todayAuthor.photo;
-    
+
    return (
     <>
         <Card border="primary" style={{ width: '50%', margin: '0 auto' }}>
@@ -34,24 +34,24 @@ const AuthorOfTheDay = (props) => {
                 <Card.Title>
                     <AboutAuthor
                         picture={todayAuthor.photo}
-                        name={todayAuthor.ru.name}
+                        name={todayAuthor[props.intl.locale].name}
                         date={todayAuthor.yearsOfLife}
-                        description={todayAuthor.ru.bio}
+                        description={todayAuthor[props.intl.locale].bio}
                     />
                 </Card.Title>
                 <Video
                     intl={props.intl}
                     id={todayAuthor.video}
                 />
-                <Link style={{paddingRight: '20px'}} to="/">
+                <Link style={{paddingRight: '20px'}}>
                     <Button variant="info">
-                        {props.intl.formatMessage({ id:"go_to" })}
+                        <Link to={`/${todayAuthor.id}`}>
+                            {props.intl.formatMessage({ id:"go_to" })}
+                        </Link>
                     </Button>
                 </Link>
             </Card.Body>
         </Card>
-            
-        
     </>
     )
 }
