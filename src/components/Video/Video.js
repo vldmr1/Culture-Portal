@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Container, Row, Col  } from 'react-bootstrap';
+import './Video.css';
 
 class VideoAboutAuthor extends Component {
     state = {
@@ -18,9 +19,17 @@ class VideoAboutAuthor extends Component {
 
         return(
             <>
-                <Button variant="primary" onClick={this.toggleModalWindow}>
-                    Watch video
-                </Button>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="video-block">
+                                <Button variant="primary" onClick={this.toggleModalWindow}>
+                                    Watch video
+                                </Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
                 <Modal show={isModalOpen} onHide={this.toggleModalWindow}>
                 <Modal.Header closeButton>
                     <Modal.Title>Video about author</Modal.Title>
