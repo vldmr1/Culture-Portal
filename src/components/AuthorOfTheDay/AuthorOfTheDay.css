@@ -1,0 +1,44 @@
+.about-autor__name{
+    font-size: 40px; 
+    text-align: center 
+}
+
+.about-autor{
+    background: rgb(250, 235, 215);
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.about-autor__image{
+    margin: 20px
+}
+
+.about-autor__date{
+    text-align: center;
+    color: #828282;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.about-autor__desc{
+    text-align: center;
+}
+
+.about-autor a{
+    padding: 2px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background: #f3c17e;
+}
+
+.about-autor a:hover{
+    color: #727272;
+}
+
+.about-autor__wrap{
+    text-align: center;
+}

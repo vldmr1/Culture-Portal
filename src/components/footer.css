@@ -1,0 +1,27 @@
+.body-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body-page header{
+    flex: 0 0 auto;
+}
+
+.body-page main{    
+    flex: 1 0 auto;
+}
+
+footer{
+    background-color: #faebd7;
+    padding: 5px 0;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+footer .copy{
+    padding: 5px 0;
+    color: rgb(161, 161, 161);
+    margin: 0 auto;
+    width: fit-content;
+}
