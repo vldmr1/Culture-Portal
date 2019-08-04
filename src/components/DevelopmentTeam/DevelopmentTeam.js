@@ -6,7 +6,7 @@ import github from "../../assets/images/github.svg"
 const DevTeam = (props) => (
     <div className = {styles.teamMember}>
       <div className = {styles.memberAvatar}>
-        <img src = {`../../assets/images/${props.image}.jpg`} alt="MemberAvatar"></img>
+        <img src = {props.image} alt="MemberAvatar"></img>
       </div>
       <h3>{props.name}</h3>
       <span>
@@ -14,7 +14,6 @@ const DevTeam = (props) => (
         <a href={`https://github.com/${props.github}`} className = {styles.memberGithub}>{props.github}</a>
       </span>
     </div>
-  
 );
 
 export default DevTeam;

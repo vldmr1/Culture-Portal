@@ -13,13 +13,13 @@
 }
 
 .memberAvatar {
-    width: 100%;
     overflow: hidden;
     height: 250px;
 }
 
 .memberAvatar img {
     margin-bottom: 0;
+    width: 100%;
 }
 
 .teamMember h3 {
