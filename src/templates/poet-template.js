@@ -23,8 +23,8 @@ const PoetPage = ( { data, intl} ) => {
       <TimeLine info={data.poetsJson[intl.locale].timeline}/>
       <Video id={data.poetsJson.video} />
       <WorksList worksList={data.poetsJson[intl.locale].works_list} />
-      <Map id={data.poetsJson.mapId}/>
       <Gallery images={data.poetsJson.gallery} />
+      <Map id={data.poetsJson.mapId}/>
     </Layout>
   )
 };
