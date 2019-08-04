@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 function renderImage(file) {
-    return <Img fixed={file.node.childImageSharp.fixed} alt={file.node.name} />;
+    return file ? <Img fixed={file.node.childImageSharp.fixed} alt={file.node.name} /> : null;
 }
 
 const Image = function(props) {
@@ -30,15 +30,11 @@ const Image = function(props) {
         }
       `}
 
-      render={({ images }) => {
-        if (images.edges.length) {
-          return renderImage(images.edges.find(image => {
-              return image.node.relativePath === props.src;
-          }))
-        }
-
-        return null;
-      }}
+      render={({ images }) =>
+          renderImage(images.edges.find(image => {
+            return image.node.relativePath === props.src;
+        }))
+      }
     />
   )
 }
