@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import { Button, Modal, Container, Row, Col  } from 'react-bootstrap';
 import './Video.css';
+import { injectIntl } from "gatsby-plugin-intl"
 
 class VideoAboutAuthor extends Component {
     state = {
@@ -9,7 +10,7 @@ class VideoAboutAuthor extends Component {
 
     toggleModalWindow = () => {
         this.setState( {isModalOpen: !this.state.isModalOpen} )
-    } 
+    }
 
     render(){
         const {isModalOpen} = this.state;
@@ -24,7 +25,7 @@ class VideoAboutAuthor extends Component {
                         <Col>
                             <div className="video-block">
                                 <Button variant="primary" onClick={this.toggleModalWindow}>
-                                    Watch video
+                                    {this.props.intl.formatMessage({ id: "video_button" })}
                                 </Button>
                             </div>
                         </Col>
@@ -43,4 +44,4 @@ class VideoAboutAuthor extends Component {
     }
 }
 
-export default VideoAboutAuthor;
+export default injectIntl(VideoAboutAuthor);

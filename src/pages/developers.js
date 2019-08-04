@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DevTeam from "../components/DevelopmentTeam/DevelopmentTeam"
+import { injectIntl } from "gatsby-plugin-intl"
 
 import gerasikImage from "../assets/images/gerasik.jpg"
 import vldmrImage from "../assets/images/vldmr1.jpg"
@@ -10,13 +11,13 @@ import velenaflowerImage from "../assets/images/velenaflower.jpg"
 import maliaxandrImage from "../assets/images/maliaxandr.jpg"
 import finnibyhImage from "../assets/images/finnibyh.jpg"
 
-const Developers = () => (
+const Developers = ({ intl }) => (
   <Layout>
     <SEO title="Our Team" />
     <h1 style={{
       textAlign: `center`,
       margin: 0}}>
-    ROLLING SCOPES SCHOOL TEAM #27</h1>
+     {intl.formatMessage({ id: "dev_team" })}</h1>
     <div 
       style={{
         display: `flex`,
@@ -65,4 +66,4 @@ const team = [
 ]
 
 
-export default Developers
+export default injectIntl(Developers)
