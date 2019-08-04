@@ -4,11 +4,11 @@
     min-height: 100vh;
 }
 
-.body header{
+.body-page header{
     flex: 0 0 auto;
 }
 
-.body main{    
+.body-page main{    
     flex: 1 0 auto;
 }
 
